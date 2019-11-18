@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B86CAC398BB66D9F2A56538 /* Pods_RxTestPlus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879714BB72F729763C0A5BA2 /* Pods_RxTestPlus_Tests.framework */; };
 		359B141346750D804E40E218 /* Pods_RxTestPlus_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2E97740E61B31E66150BAE /* Pods_RxTestPlus_Example.framework */; };
+		41EE7BBA238304A500FBA526 /* ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE7BB7238304A400FBA526 /* ErrorTests.swift */; };
+		41EE7BBC238304A500FBA526 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE7BB9238304A500FBA526 /* ComparableTests.swift */; };
+		41EE7BBD2383067100FBA526 /* NimbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE7BB8238304A400FBA526 /* NimbleTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		0B9DD96CC5BA0DEBD581114C /* Pods-RxTestPlus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTestPlus_Example.debug.xcconfig"; path = "Target Support Files/Pods-RxTestPlus_Example/Pods-RxTestPlus_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3540BDEB9032DB79D047C611 /* Pods-RxTestPlus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTestPlus_Example.release.xcconfig"; path = "Target Support Files/Pods-RxTestPlus_Example/Pods-RxTestPlus_Example.release.xcconfig"; sourceTree = "<group>"; };
+		41EE7BB7238304A400FBA526 /* ErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorTests.swift; sourceTree = "<group>"; };
+		41EE7BB8238304A400FBA526 /* NimbleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleTests.swift; sourceTree = "<group>"; };
+		41EE7BB9238304A500FBA526 /* ComparableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxTestPlus_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTestPlus_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +49,10 @@
 		868274768C7FCC378A9F3F00 /* Pods-RxTestPlus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTestPlus_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RxTestPlus_Tests/Pods-RxTestPlus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		879714BB72F729763C0A5BA2 /* Pods_RxTestPlus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTestPlus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2E97740E61B31E66150BAE /* Pods_RxTestPlus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTestPlus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9851C6A7B582A0ADE4C269B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9851C6A7B582A0ADE4C269B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A9ADD99BCD08F8AA6F10C64E /* Pods-RxTestPlus_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTestPlus_Tests.release.xcconfig"; path = "Target Support Files/Pods-RxTestPlus_Tests/Pods-RxTestPlus_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A9FBCA94CEFE17A7E6488D7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C33062C7D32B037E9FEF989D /* RxTestPlus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxTestPlus.podspec; path = ../RxTestPlus.podspec; sourceTree = "<group>"; };
+		A9FBCA94CEFE17A7E6488D7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C33062C7D32B037E9FEF989D /* RxTestPlus.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxTestPlus.podspec; path = ../RxTestPlus.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,6 @@
 				868274768C7FCC378A9F3F00 /* Pods-RxTestPlus_Tests.debug.xcconfig */,
 				A9ADD99BCD08F8AA6F10C64E /* Pods-RxTestPlus_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				41EE7BB9238304A500FBA526 /* ComparableTests.swift */,
+				41EE7BB7238304A400FBA526 /* ErrorTests.swift */,
+				41EE7BB8238304A400FBA526 /* NimbleTests.swift */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -228,6 +236,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -312,10 +321,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxTestPlus_Example/Pods-RxTestPlus_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTestPlus/RxTestPlus.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTestPlus.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +366,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				41EE7BBC238304A500FBA526 /* ComparableTests.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				41EE7BBA238304A500FBA526 /* ErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EE7BBD2383067100FBA526 /* NimbleTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
