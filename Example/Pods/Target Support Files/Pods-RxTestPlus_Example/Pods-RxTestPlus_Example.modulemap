@@ -1,0 +1,6 @@
+framework module Pods_RxTestPlus_Example {
+  umbrella header "Pods-RxTestPlus_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

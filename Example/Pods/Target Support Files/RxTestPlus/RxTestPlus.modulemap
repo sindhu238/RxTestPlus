@@ -1,0 +1,6 @@
+framework module RxTestPlus {
+  umbrella header "RxTestPlus-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+  - RxTestPlus (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+  - RxTestPlus (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  RxTestPlus:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  RxTestPlus: 2dbddf42a9d604fb6cad8f67536abed6c9c41c0d
+
+PODFILE CHECKSUM: 7b6b34ab4794cbfeab9548ba818063bd6bae2900
+
+COCOAPODS: 1.8.4
