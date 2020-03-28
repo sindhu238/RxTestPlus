@@ -19,6 +19,12 @@ Pod::Spec.new do |s|
 
   s.description      = 'This is a set of extension functions that helps you write Rxtests in a declarative manor. 
 
+The method names are purposely the same as RxJava2 so that you can copy the testing approach from any android application.
+
+This has successfully saved us a great deal of time and we want to share it
+
+' 
+
   s.homepage         = 'https://github.com/sindhu238/RxTestPlus'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
