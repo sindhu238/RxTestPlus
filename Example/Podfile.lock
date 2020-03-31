@@ -1,16 +1,16 @@
 PODS:
-  - Nimble (7.3.4)
-  - Quick (1.2.0)
-  - RxSwift (5.0.1)
-  - RxTest (5.0.1):
+  - Nimble (8.0.7)
+  - Quick (2.2.0)
+  - RxSwift (5.1.1)
+  - RxTest (5.1.1):
     - RxSwift (~> 5)
-  - RxTestPlus (0.1.0):
+  - RxTestPlus (0.1.1):
     - RxSwift
     - RxTest
 
 DEPENDENCIES:
-  - Nimble (~> 7.0)
-  - Quick (~> 1.2.0)
+  - Nimble
+  - Quick
   - RxTestPlus (from `../`)
 
 SPEC REPOS:
@@ -25,12 +25,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
-  RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
-  RxTestPlus: 5d270ef89af7ec330d30a8d8ef6e7186e14b8149
+  Nimble: a73af6ecd4c9106f434f3d55fc54570be3739e0b
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxTest: 711632d5644dffbeb62c936a521b5b008a1e1faa
+  RxTestPlus: 69425382aa25246435a723a5e95624ae0b987e90
 
-PODFILE CHECKSUM: 7b6b34ab4794cbfeab9548ba818063bd6bae2900
+PODFILE CHECKSUM: bee2a7a5f85015de4361c3ba39faa379d01514b5
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
