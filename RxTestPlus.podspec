@@ -9,39 +9,23 @@
 Pod::Spec.new do |s|
   s.name             = 'RxTestPlus'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RxTestPlus.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'RxTestPlus is a library that gives you flexibility to write tests more declaratively'
   s.description      = 'This is a set of extension functions that helps you write Rxtests in a declarative manor. 
+The aim is to improve the readability and minimise the risk of making errors in boiler plate code. 
 
 The method names are purposely the same as RxJava2 so that you can copy the testing approach from any android application.
-
-This has successfully saved us a great deal of time and we want to share it
-
 ' 
 
   s.homepage         = 'https://github.com/sindhu238/RxTestPlus'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sindhu238' => 'srisindhusaride@gmail.com' }
+  s.author           = { 'sindhu238' => 'srisindhusaride@gmail.com', 'markGilchrist' => 'theheadchef@gameforeverything.com' }
   s.source           = { :git => 'https://github.com/sindhu238/RxTestPlus.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'RxTestPlus/Classes/**/*'
   s.swift_version = '5.1'
   
-  # s.resource_bundles = {
-  #   'RxTestPlus' => ['RxTestPlus/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift'
+  s.dependency 'RxTest'
 end

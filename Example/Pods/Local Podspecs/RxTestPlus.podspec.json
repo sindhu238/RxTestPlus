@@ -1,15 +1,16 @@
 {
   "name": "RxTestPlus",
   "version": "0.1.0",
-  "summary": "A short description of RxTestPlus.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "RxTestPlus is a library that gives you flexibility to write tests more declaratively",
+  "description": "This is a set of extension functions that helps you write Rxtests in a declarative manor. The aim is to improve the readability and minimise the risk of making errors in boiler plate code. \n\nMuch of the inspiration for these extensions came from the RxJava2",
   "homepage": "https://github.com/sindhu238/RxTestPlus",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "sindhu238": "srisindhusaride@gmail.com"
+    "sindhu238": "srisindhusaride@gmail.com",
+    "markGilchrist": "theheadchef@gameforeverything.com"
   },
   "source": {
     "git": "https://github.com/sindhu238/RxTestPlus.git",
@@ -18,5 +19,15 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "RxTestPlus/Classes/**/*"
+  "source_files": "RxTestPlus/Classes/**/*",
+  "swift_versions": "5.0",
+  "dependencies": {
+    "RxSwift": [
+
+    ],
+    "RxTest": [
+
+    ]
+  },
+  "swift_version": "5.0"
 }
