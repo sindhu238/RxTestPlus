@@ -29,5 +29,9 @@
 
     ]
   },
+  "ios": {
+    "frameworks": "XCTest"
+  },
+  "weak_frameworks": "XCTest",
   "swift_version": "5.1"
 }

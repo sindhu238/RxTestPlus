@@ -28,4 +28,7 @@ The method names are purposely the same as RxJava2 so that you can copy the test
   
   s.dependency 'RxSwift'
   s.dependency 'RxTest'
+
+  s.ios.framework = 'XCTest' 
+  s.weak_framework = 'XCTest' 
 end
