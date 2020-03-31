@@ -1,4 +1,6 @@
 use_frameworks!
+swift_version = 5.0
+platform :ios, '11.0'
 
 target 'RxTestPlus_Example' do
   pod 'RxTestPlus', :path => '../'
@@ -6,7 +8,7 @@ target 'RxTestPlus_Example' do
   target 'RxTestPlus_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0'
+    pod 'Quick'
+    pod 'Nimble'
   end
 end
