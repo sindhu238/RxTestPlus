@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxTestPlus'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'RxTestPlus is a library that gives you flexibility to write tests more declaratively'
   s.description      = 'This is a set of extension functions that helps you write Rxtests in a declarative manor. 
 The aim is to improve the readability and minimise the risk of making errors in boiler plate code. 
