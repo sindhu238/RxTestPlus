@@ -110,6 +110,14 @@ extension TestableObserver {
 
     // MARK: internal functions
 
+    internal func getLastElementOrFail( file: StaticString, line: UInt ) -> Element? {
+        guard elements.count > 0 else {
+            XCTFail("There are no elements observered, count -> [0]", file: file, line: line)
+            return nil
+        }
+        return self.elements.last
+    }
+    
     internal func getElementOrFail(_ index: Int, file: StaticString, line: UInt ) -> Element? {
         guard index >= 0 && index < elements.count else {
             XCTFail("index out of bounds index ->[\(index)], count -> [\(elements.count)]", file: file, line: line)
