@@ -30,5 +30,7 @@ The method names are purposely the same as RxJava2 so that you can copy the test
   s.dependency 'RxTest'
 
   s.ios.framework = 'XCTest' 
-  s.weak_framework = 'XCTest' 
+  s.weak_framework = 'XCTest'
+  
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end
