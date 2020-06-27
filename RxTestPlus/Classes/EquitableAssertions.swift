@@ -147,7 +147,7 @@ extension TestableObserver where Element: Equatable {
     /// - Parameters:
     ///   - value: The Expected Element
     public func assertLastValue(value: Element, file: StaticString = #file, line: UInt = #line) {
-        if let element = getElementOrFail(elements.count - 1, file: file, line: line) {
+        if let element = getLastElementOrFail(file: file, line: line) {
             XCTAssertEqual(element, value, file: file, line: line)
         }
     }
@@ -162,7 +162,7 @@ extension TestableObserver where Element: Equatable {
     ///            .disposed(by: bag)
     ///
     ///        // assert
-    ///        intObserver.assertFirstValue(value: 2)
+    ///        intObserver.assertFirstValue(value: 1)
     ///    }
     ///
     /// - Parameters:
@@ -170,6 +170,28 @@ extension TestableObserver where Element: Equatable {
     public func assertFirstValue(value: Element, file: StaticString = #file, line: UInt = #line) {
         if let element = getElementOrFail(0, file: file, line: line) {
             XCTAssertEqual(element, value, file: file, line: line)
+        }
+    }
+    
+    /// This function assert that one and only one event satisfies the suplied predicate and is equal to the expected element supplied
+    ///
+    /// example
+    ///    // arrange + act
+    ///    Observable
+    ///    .from([1,2,3,4,5])
+    ///    .subscribe(intObserver)
+    ///    .disposed(by: bag)
+    ///
+    ///    // assert
+    ///    intObserver.assertOneValueIs(expected: 4, { $0 % 4 == 0 })
+
+    /// - Parameters:
+    ///   - expected: Element
+    ///   - that: search predicate
+
+    public func assertLastValueIs(expected: Element, _ that: @escaping(Element) -> Bool, file: StaticString = #file, line: UInt = #line ) {
+        if let recorded = getLastElementOrFail(file: file, line: line) {
+            XCTAssertTrue(that(recorded), file: file, line: line)
         }
     }
 }
